@@ -20,26 +20,35 @@ const SW1 = styled.div`
   align-items: center;
   border-radius: 15px;
   margin: 24px 24px 24px 0px;
-  @media (max-width: 900px) {
+  @media (max-width: 1200px) {
    width: 100%;
+   height: auto;
   }
 `
 const SW1A = styled.div`
   width: 60%;
-  height: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+   @media (max-width: 1200px) {
+   width: 100%;
+   height: auto;
+  }
 `
 
 const SW1B = styled.div`
   width: 40%;
-  height: 100%;
+  height: auto;
   display : flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   margin-right: 10px;
+   @media (max-width: 1200px) {
+   width: 100%;
+   height: auto;
+  }
 `
 
 const SW1BT = styled.div`
@@ -70,18 +79,30 @@ const SW2 = styled.div`
   width: 40%;
   background-color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
   margin: 24px 0px 24px 0px;
   @media (max-width: 900px) {
    width: 100%;
-   margin-bottom: 24px;
+   margin: 0px;
   }
 `
-// const SW1 = styled.div``
-// const SW1 = styled.div``
+const SW2T = styled.div`
+ height: 15%;
+ font-size: 15px;
+ font-style: uppercase;
+ display: flex;
+  align-items: center;
+`
+const SW2G = styled.div`
+  height: 90%;
+  font-size: 15px;
+  font-style: uppercase;
+  display: flex;
+  align-items: center;
+`
 
 class Layout2B extends Component {
   render() {
@@ -113,7 +134,12 @@ class Layout2B extends Component {
           </SW1B>
         </SW1>
         <SW2>
-
+          <SW2T>
+            Lorem Ipsum Dolor
+          </SW2T>
+          <SW2G>
+            Graph
+          </SW2G>
         </SW2>
 
       </MainWrapper>

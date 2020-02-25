@@ -40,6 +40,7 @@ const SW2 = styled.div`
   @media (max-width: 900px) {
     width: auto;
     margin-right: 24px;
+    height: auto;
   }
 `
 
