@@ -11,15 +11,17 @@ const percentage = 66;
 const needDominantBaselineFix = true;
 
 
-const CircularProgress = () => (
+const CircularProgress1 = () => (
   <div >
-    <div style={{ width: "70px" }}>
+    <div style={{ width: "50px" }}
+    >
       <CircularProgressbar
+
         value={percentage}
         // borderBlockStartColor={}
         text={
           <tspan
-            style={{ webkitTextFillColor:"green" ,alignmentBaseline: "hanging", fontSize: "30px", }}
+            style={{ alignmentBaseline: "hanging", fontSize: "30px", }}
             dy={needDominantBaselineFix ? -15 : 0}>{percentage}%</tspan>
         }
       />
@@ -27,5 +29,5 @@ const CircularProgress = () => (
   </div>
 );
 
-render(<CircularProgress />, document.getElementById("root"));
-export default CircularProgress
+render(<CircularProgress1 />, document.getElementById("root"));
+export default CircularProgress1

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import ImageAvatars from './ProfilePhoto'
 import RoomIcon from '@material-ui/icons/Room';
+import Example1 from '../Charts/DataComposedChart'
 
 
 
@@ -14,6 +15,10 @@ const MainWrapper = styled.div`
   margin-bottom: 24px;
   border-radius: 15px;
   background-color:white;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    height: auto;
+  }
   @media (max-width: 900px) {
     flex-direction: row;
   }
@@ -22,8 +27,13 @@ const SW1 = styled.div`
   height: auto;
   width: 60%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: baseline; */
+  /* align-items: center; */
+  @media (max-width: 1200px) {
+    height: auto;
+    width: 100%;
+    justify-content: center;
+  }
   
   @media (max-width: 900px) {
     width: 50%;
@@ -38,6 +48,13 @@ const SW2 = styled.div`
   margin: 10px 0px;
   height: 65px;
   width: 100px;
+  @media (max-width: 1200px) {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   @media (max-width: 900px) {
     width: 50%;
     margin-right: 24px;
@@ -48,6 +65,12 @@ const SW2A = styled.div`
   height: 70px;
   display: flex;
   flex-direction: row;
+  @media (max-width: 1200px) {
+    height: auto;
+    width: 50%;
+    justify-content: center;
+    align-items: center
+  }
   @media (max-width: 900px) {
     width: 100%;
     margin-right: 24px;
@@ -85,13 +108,19 @@ const SW2B = styled.div`
   width: 100%;
   height: 45px;
   font-size: 8px;
+  @media (max-width: 1200px) {
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center
+  }
 `
 class ProfileGraph extends Component {
   render() {
     return (
       <MainWrapper>
         <SW1>
-          Graph
+          <Example1/>
         </SW1>
 
         <SW2>

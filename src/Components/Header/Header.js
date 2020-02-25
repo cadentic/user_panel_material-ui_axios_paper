@@ -43,7 +43,7 @@ const HeaderWrapper2 = styled.div`
    width: 20%;
   }
    @media (max-width: 500px) {
-   width: auto;
+   width: 40%;
   }
 `
 const MessageIconW = styled.div`
@@ -53,7 +53,7 @@ const MessageIconW = styled.div`
   justify-content: center;
   flex-direction: column;
   @media (max-width: 360px) {
-  width: auto;
+  width: 19px;
 }
 `
 const MessageIcon = styled.div`
@@ -88,7 +88,7 @@ const NotificationIconW = styled.div`
   flex-direction: column;
   /* background-color: blue; */
   @media (max-width: 360px) {
-  width: auto;
+  width: 19px;
 }
 `
 const NotificationIcon = styled.div`
@@ -150,20 +150,7 @@ class Header extends Component {
         <HeaderWrapper>
           <HeaderWrapper1>
             <CheckBoxOutlineBlankIcon style={{ fontSize: "40px", color: "#b1b1b1" }} />
-            <Button variant="contained" ButtonClassKey= "iconSizeSmall"
-              style={{
-                height: "25px",
-                width: "85px",
-                borderRadius: "100px",
-                backgroundColor: "#00dec5",
-                color: "white",
-                fontSize: "12px",
-                textTransform: "none",
-                textAlign: "center",
-                lineHeight: "0",
-                
-
-              }} > Button </Button>
+            <Button variant="contained" style={{ height: "25px", width: "85px", borderRadius: "100px", backgroundColor: "#00dec5", color: "white", fontSize: "12px", textTransform: "none", textAlign: "center", lineHeight: "0" }} > Button </Button>
           </HeaderWrapper1>
           <HeaderWrapper2>
             <MessageIconW>

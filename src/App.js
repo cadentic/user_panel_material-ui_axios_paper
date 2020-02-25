@@ -10,6 +10,7 @@ import Example4 from './Components/Charts/Example4'
 import BarChart1 from './Components/Charts/BarChat'
 import ZigChart from './Components/Charts/ZigChart'
 import AnimatedProgressProvider from './Components/Charts/RoundChart'
+import ProgressBar from './Components/Charts/ProgressBar';
 
 
 
@@ -26,6 +27,7 @@ function App() {
     // <BarChart1 />
     // <ZigChart />
     // <AnimatedProgressProvider />
+    // <ProgressBar/>
 
   );
 }

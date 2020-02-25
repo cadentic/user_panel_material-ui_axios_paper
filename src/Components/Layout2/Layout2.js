@@ -5,6 +5,7 @@ import Layout2A from './Layout2A'
 import Layout2B from './Layout2B';
 
 
+
 const MainWrapper = styled.div`
   width: 100%;
   height: 100%;
@@ -31,7 +32,7 @@ const SW1 = styled.div`
 
 const SW2 = styled.div`
   width: 75%;
-  height: 374px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -40,7 +41,6 @@ const SW2 = styled.div`
   @media (max-width: 900px) {
     width: auto;
     margin-right: 24px;
-    height: auto;
   }
 `
 

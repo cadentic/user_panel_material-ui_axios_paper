@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import SwitchesSize from './Switch'
+import CircularProgress1 from '../Charts/RoundChart2'
 
 const MainWrapper = styled.div`
   width: 100%;
@@ -10,8 +11,6 @@ const MainWrapper = styled.div`
   margin-right: 24px;
   @media (max-width: 900px) {
     flex-direction: column;
-    height: auto;
-    margin: 0px;
   }
 `
 const SW = styled.div`
@@ -21,16 +20,11 @@ const SW = styled.div`
   flex-direction: column;
   background-color: white;
   border-radius: 15px;
-  @media (max-width: 1200px) {
-    width: 100%;
-    margin-right: 24px;
-    height: auto;
-  }
   @media (max-width: 900px) {
     width: 100%;
-    margin-top: 24px;
+    margin-right: 24px;
     margin-bottom: 24px;
-    height: auto;
+    
   }
 `
 
@@ -44,7 +38,6 @@ const SW1 = styled.div`
   margin-top: 24px;
   @media (max-width: 900px) {
     width: 100%;
-    height: auto;
     margin-right: 24px;
     
   }
@@ -68,6 +61,9 @@ const SW1BC = styled.div`
 `
 const SW1C = styled.div`
   width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around
 `
 
 
@@ -79,7 +75,7 @@ const SW2 = styled.div`
   flex-direction: column;
   align-content: center;
   border-radius: 15px;
-  @media (max-width: 1200px) {
+  @media (max-width: 900px) {
     width: 100%;
     height: auto;
     margin-left: 0px;
@@ -93,7 +89,7 @@ const Graph = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width: 900px) {
-    height: auto;
+    /* margin: 10px 0px; */
   }
 `
 const ContentBox = styled.div`
@@ -103,12 +99,13 @@ const ContentBox = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-    @media (max-width: 1200px) {
+    @media (max-width: 900px) {
+    margin: 10px 0px;
     height: auto;
   }
   @media (max-width: 500px) {
     flex-direction: column;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     
   }
   
@@ -123,12 +120,8 @@ const ContentBox1 = styled.div`
   justify-content:center;
   align-items: center;
   margin: 0px 20px;
-  @media (max-width: 1200px) {
-    width: auto;
-    height: auto;
-  }
   @media (max-width: 500px) {
-    /* margin: 0px 10px 10px 10px; */
+    margin: 0px 10px 10px 10px;
     width: 100%;
   }
 `
@@ -154,12 +147,12 @@ class Layout2A extends Component {
             </SW1B>
             <SW1C>
               <SW1BN>
-                Progress Circle
-            </SW1BN>
+                <CircularProgress1 />
+              </SW1BN>
 
               <SW1BN>
-                Progress Circle
-            </SW1BN>
+                <CircularProgress1 />
+              </SW1BN>
             </SW1C>
 
           </SW1>
@@ -179,12 +172,12 @@ class Layout2A extends Component {
             </SW1B>
             <SW1C>
               <SW1BN>
-                Progress Circle
-            </SW1BN>
+                <CircularProgress1 />
+              </SW1BN>
 
               <SW1BN>
-                Progress Circle
-            </SW1BN>
+                <CircularProgress1 />
+              </SW1BN>
             </SW1C>
 
           </SW1>
@@ -192,7 +185,7 @@ class Layout2A extends Component {
 
         <SW2>
           <Graph>
-           Lorem Ipsum Graph
+            Lorem Ipsum Graph
           </Graph>
           <ContentBox>
             <ContentBox1>

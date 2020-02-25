@@ -15,7 +15,7 @@ const MainWrapper = styled.div`
   margin: 0;
   @media (max-width: 900px) {
     width: auto;
-    height: auto;
+    height: 100%;
   }
 `
 const SubWrapper1 = styled.div`
@@ -24,10 +24,6 @@ const SubWrapper1 = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #dbe1e3;
-  @media (max-width: 1200px) {
-    width: auto;
-   
-  }
 `
 
 

@@ -6,22 +6,22 @@ import {
 
 const data = [
   {
-    name: 'Page A', uv: 590, pv: 800, amt: 1400,
+    name: 'Page A', uv: 1, pv: 1, amt: 1,
   },
   {
-    name: 'Page B', uv: 868, pv: 967, amt: 1506,
+    name: 'Page B', uv: 2, pv: 3, amt: 4,
   },
   {
-    name: 'Page C', uv: 397, pv: 198, amt: 989,
+    name: 'Page C', uv: 4, pv: 5, amt: 3,
   },
   {
-    name: 'Page D', uv: 480, pv: 200, amt: 1228,
+    name: 'Page D', uv: 2, pv: 2, amt: 4,
   },
   {
-    name: 'Page E', uv: 520, pv: 108, amt: 1100,
+    name: 'Page E', uv: 3, pv: 2, amt: 2,
   },
   {
-    name: 'Page F', uv: 400, pv: 680, amt: 1700,
+    name: 'Page F', uv: 3, pv: 3, amt: 4,
   },
 ];
 
@@ -31,19 +31,20 @@ export default class Example1 extends PureComponent {
   render() {
     return (
       <ComposedChart
-        width={100}
-        height={100}
+        width={160}
+        height={70}
         data={data}
         margin={{
-          top: 0, right: 0, bottom: 0, left: 0,
+          top: 10, right: -20, bottom: -20, left: -35,
         }}
+        fontSize={10}
       >
         <CartesianGrid stroke="#f5f5f5" />
         <XAxis dataKey="none" />
         <YAxis />
         <Tooltip />
         {/* <Legend /> */}
-        <Bar dataKey="uv" barSize={5} fill="#c7f2fb" />
+        <Bar dataKey="uv" barSize={12} fill="#c7f2fb" />
         <Line type="monotone" dataKey="uv" stroke="#00dec5 " />
       </ComposedChart>
     );

@@ -5,25 +5,25 @@ import {
 
 const data = [
   {
-    name: 'Page A', uv: 4000, pv: 2400, amt: 2400,
+    name: 'Page A', uv: 40, pv: 24, amt: 24,
   },
   {
-    name: 'Page B', uv: 3000, pv: 1398, amt: 2210,
+    name: 'Page B', uv: 300, pv: 13, amt: 221,
   },
   {
-    name: 'Page C', uv: 2000, pv: 9800, amt: 2290,
+    name: 'Page C', uv: 200, pv: 980, amt: 290,
   },
   {
-    name: 'Page D', uv: 2780, pv: 3908, amt: 2000,
+    name: 'Page D', uv: 278, pv: 390, amt: 200,
   },
   {
-    name: 'Page E', uv: 1890, pv: 4800, amt: 2181,
+    name: 'Page E', uv: 189, pv: 480, amt: 218,
   },
   {
-    name: 'Page F', uv: 2390, pv: 3800, amt: 2500,
+    name: 'Page F', uv: 239, pv: 380, amt: 250,
   },
   {
-    name: 'Page G', uv: 3490, pv: 4300, amt: 2100,
+    name: 'Page G', uv: 349, pv: 430, amt: 210,
   },
 ];
 
@@ -32,9 +32,10 @@ export default class Example4 extends PureComponent {
 
   render() {
     return (
-      <div style={{ width: '100%', height: 300 }}>
+      <div style={{ width: 300, height: 200 }}>
         <ResponsiveContainer>
           <AreaChart
+            fontSize={10}
             data={data}
             margin={{
               top: 10, right: 30, left: 0, bottom: 0,
@@ -43,8 +44,8 @@ export default class Example4 extends PureComponent {
             <CartesianGrid />
             <XAxis />
             <YAxis />
-            <Tooltip />
-            <Area dataKey="uv" stroke="#343e57" fill="#c2f7f1" type="monotone" />
+            {/* <Tooltip />z */}
+            <Area dataKey="uv" stroke="#343e57" fill="#c2f7f1" type="linear" />
           </AreaChart>
         </ResponsiveContainer>
       </div>

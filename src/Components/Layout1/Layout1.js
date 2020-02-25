@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import AssessmentIcon from '@material-ui/icons/Assessment';
+import ProgressBar from '../Charts/ProgressBar'
+import CircularProgress from '../Charts/RoundChart'
 
 
 const MainWrapper = styled.div`
@@ -84,11 +86,12 @@ const SW12Text = styled.div`
 `
 const SW12CircleBox = styled.div`
   height: auto;
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: center;
+  justify-content: space-around;
+  
   @media (max-width: 900px) {
    width: 100%;
    padding-bottom: 10px;
@@ -106,7 +109,6 @@ const SW2 = styled.div`
     width: auto;
     height: auto;
     margin-left: 24px;
-    margin-right: 15px;
     
   }
 `
@@ -115,11 +117,13 @@ const SW2A = styled.div`
  flex-direction: column;
  justify-content: center;
  align-items: center;
+ 
 `
 const SW2ATB = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
+  
 `
 const SW2AT = styled.div`
   width: 50%;
@@ -143,10 +147,12 @@ const SW2ATA = styled.div`
   }
 `
 const SW2ATG = styled.div`
-   height: 20px;
+   height: 10px;
    width: 100%;
    display: flex;
    justify-content: center;
+   align-items: center;
+   margin-top: 5px;
 `
 
 const SW2B = styled.div`
@@ -210,7 +216,11 @@ class Layout1 extends Component {
               </SW12Text>
             </SW12A>
             <SW12CircleBox>
-              <b >Progres bar circles</b>
+              <CircularProgress />
+              <CircularProgress />
+              <CircularProgress />
+              <CircularProgress />
+              <CircularProgress />
             </SW12CircleBox>
           </SW12>
         </SW1>
@@ -226,7 +236,7 @@ class Layout1 extends Component {
             </SW2ATB>
 
             <SW2ATG>
-              Progress Bar 1
+              <ProgressBar />
             </SW2ATG>
           </SW2A>
           <SW2A>
@@ -240,7 +250,7 @@ class Layout1 extends Component {
             </SW2ATB>
 
             <SW2ATG>
-              Progress Bar 2
+              <ProgressBar />
             </SW2ATG>
           </SW2A>
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-
+import BarChart1 from '../Charts/BarChat'
+import Example4 from '../Charts/Example4'
 
 const MainWrapper = styled.div`
   width: 100%;
@@ -22,32 +23,40 @@ const SW1 = styled.div`
   margin: 24px 24px 24px 0px;
   @media (max-width: 1200px) {
    width: 100%;
-   height: auto;
+   flex-direction: column;
+   align-content: center;
+   align-items: center;
+  }
+
+  @media (max-width: 900px) {
+   width: 100%;
+   flex-direction: row;
+  }
+  @media (max-width: 615px) {
+   width: 100%;
+   flex-direction: column;
   }
 `
 const SW1A = styled.div`
   width: 60%;
-  height: auto;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-   @media (max-width: 1200px) {
-   width: 100%;
-   height: auto;
-  }
+  
 `
 
 const SW1B = styled.div`
   width: 40%;
-  height: auto;
+  height: 100%;
   display : flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   margin-right: 10px;
    @media (max-width: 1200px) {
-   width: 100%;
-   height: auto;
+   width: 70%;
+   flex-direction: column;
   }
 `
 
@@ -74,7 +83,6 @@ const ButtonI = styled.div`
   border-radius: 50%;
   background-color: white;
 `
-
 const SW2 = styled.div`
   width: 40%;
   background-color: white;
@@ -87,6 +95,7 @@ const SW2 = styled.div`
   @media (max-width: 900px) {
    width: 100%;
    margin: 0px;
+   margin-bottom: 24px;
   }
 `
 const SW2T = styled.div`
@@ -110,7 +119,7 @@ class Layout2B extends Component {
       <MainWrapper>
         <SW1>
           <SW1A>
-            Graph
+            <BarChart1/>
           </SW1A>
           <SW1B>
             <SW1BT>
@@ -138,7 +147,7 @@ class Layout2B extends Component {
             Lorem Ipsum Dolor
           </SW2T>
           <SW2G>
-            Graph
+            <Example4/>
           </SW2G>
         </SW2>
 
