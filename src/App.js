@@ -11,7 +11,7 @@ import BarChart1 from './Components/Charts/BarChat'
 import ZigChart from './Components/Charts/ZigChart'
 import AnimatedProgressProvider from './Components/Charts/RoundChart'
 import ProgressBar from './Components/Charts/ProgressBar';
-
+import Main from './component/main'
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
   return (
     // <CDrawer />
     // <Header />
-    <Page1 />
+    // <Page1 />
     // <Example1 />
     // <Example2 />
     // <Example3 />
@@ -28,7 +28,7 @@ function App() {
     // <ZigChart />
     // <AnimatedProgressProvider />
     // <ProgressBar/>
-
+    <Main />
   );
 }
 
