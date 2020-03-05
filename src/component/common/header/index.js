@@ -9,7 +9,7 @@ import MenuListComposition from './profile'
 
 const MainWrapper = styled.div`
     width : 100%;
-    height : 70px;
+    height : 60px;
     background-color : #fefefa;
     display : flex;
     align-items : center;
