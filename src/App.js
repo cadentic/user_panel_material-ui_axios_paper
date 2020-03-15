@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-// import CDrawer from './Components/Drawer/CDrawer'
+import CDrawer from './Components/Drawer/CDrawer'
 import Header from './Components/Header/Header'
 import Page1 from './Components/CompletePage/Page1'
 import Example1 from './Components/Charts/DataComposedChart'
@@ -17,18 +17,21 @@ import Main from './component/main'
 function App() {
 
   return (
-    // <CDrawer />
-    // <Header />
-    // <Page1 />
-    // <Example1 />
-    // <Example2 />
-    // <Example3 />
-    // <Example4 />
-    // <BarChart1 />
-    // <ZigChart />
-    // <AnimatedProgressProvider />
-    // <ProgressBar/>
+    <div>
+    {/* <CDrawer />
+    <Header />
+    <Page1 />
+    <Example1 />
+    <Example2 />
+    <Example3 />
+    <Example4 />
+    <BarChart1 />
+    <ZigChart />
+    <AnimatedProgressProvider />
+    <ProgressBar/> */}
+    {/* <Page1 /> */}
     <Main />
+    </div>
   );
 }
 

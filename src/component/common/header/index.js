@@ -6,6 +6,7 @@ import { ButtonComp } from '../button'
 import EmailIcon from '@material-ui/icons/Email';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MenuListComposition from './profile'
+import ImageAvatars from './avatar';
 
 const MainWrapper = styled.div`
     width : 100%;
@@ -68,7 +69,7 @@ const MessageIcon = styled.div`
 const MessageIconT = styled.div`
     width: 18px;
     height: 18px;
-    background-color: #00dec5 !important;
+    background-color: ${properties.theme1} !important;
     color: white;
     display: flex;
     flex-direction : row;
@@ -108,7 +109,7 @@ const NotificationIcon = styled.div`
 const NotificationIconT = styled.div`
   width: 18px;
   height: 18px;
-  background-color: #00dec5 !important;
+  background-color: ${properties.theme1} !important;
   color: white;
   display: flex;
   flex-direction : row;
@@ -192,7 +193,7 @@ class Header extends Component {
                 </MiddleBar>
                 <RightBar>
                     <AvtarCircle>
-                    {/* <ImageAvatars /> */}
+                    <ImageAvatars />
                     </AvtarCircle>
                     <MenuListComposition />
                 </RightBar>
