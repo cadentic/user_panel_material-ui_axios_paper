@@ -62,7 +62,7 @@ export default class CompositLineBar extends PureComponent {
             <ComposedChart
                 width={450}
                 height={200}
-                data={data}
+                data={this.props.data || data}
                 margin={{
                 top: 0, right: 0, bottom: 0, left: 0,
                 }}

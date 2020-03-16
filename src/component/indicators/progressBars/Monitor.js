@@ -51,10 +51,11 @@ class Monitor extends Component {
         {cPercentage: 47, strokeColor: properties.theme1}
     ]
     render(){
+        const _data = this.data || this.props.data;
         return(
             <Mainwrapper>
                 { 
-                this.data.map( data => {
+                _data.map( data => {
                     return (
                         <RW>
                             <CRProgress>
@@ -73,7 +74,7 @@ class Monitor extends Component {
                             </CRProgress>
                             <CRProgressText>
                                 <CRProgressTextContent>
-                                    Lorem ipsum doror sit amet. Consecteteur.
+                                    {data.summary || "Lorem ipsum doror sit amet. Consecteteur."}
                                 </CRProgressTextContent>
                                 <Button variant="outlined" size="small" endIcon={<ArrowDropDownIcon>dropdown</ArrowDropDownIcon>}>Lorem Ipsum </Button>
                             </CRProgressText>

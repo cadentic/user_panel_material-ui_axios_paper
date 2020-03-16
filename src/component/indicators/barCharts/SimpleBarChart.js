@@ -49,7 +49,7 @@ export default class SimpleBarChart extends PureComponent {
             <BarChart
                 width={350}
                 height={175}
-                data={data}
+                data={this.props.data || data}
                 margin={{
                 top: 0, right: 0, left: 0, bottom: 0,
                 }}

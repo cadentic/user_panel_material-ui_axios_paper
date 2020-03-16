@@ -86,10 +86,10 @@ class Default extends Component {
                     </CRProgress>
                     <CRProgressText>
                         <CRProgressTextTitle>
-                            LOREM IPSUM DOLOR
+                            {this.props.title || "LOREM IPSUM DOLOR"}
                         </CRProgressTextTitle>
                         <CRProgressTextContent>
-                            Lorem ipsum doror sit amet. Consecteteur adipisicing elit, sed
+                            {this.props.detail || "Lorem ipsum doror sit amet. Consecteteur adipisicing elit, sed"}
                         </CRProgressTextContent>
                     </CRProgressText>
                 </RW>
@@ -98,7 +98,7 @@ class Default extends Component {
                         {this.props.lPercentage || 0}%
                     </LProgressTextTitle>
                     <LProgressTextContent>
-                        Lorem ipsum sil
+                        {this.props.summary || "Lorem ipsum sil"}
                     </LProgressTextContent>
                 </RW>
                 <RW>

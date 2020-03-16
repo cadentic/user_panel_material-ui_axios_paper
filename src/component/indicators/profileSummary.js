@@ -62,13 +62,13 @@ class profileSummary extends Component {
                     <AvtarName>
                         { this.props.name || 'Taye APATA'}
                     </AvtarName>
-
+                    
                     <Text>
                         <Location>dropdown</Location>
                         { this.props.city || 'City'}
                     </Text>
-                    <Button variant="outlined" size="small">Lorem</Button>
-                    <Button variant="contained" size="small" endIcon={<ArrowDropDownIcon>dropdown</ArrowDropDownIcon>}>Lorem Ipsum </Button>
+                    <Button variant="outlined" size="small">{"Lorem"}</Button>
+                    <Button variant="contained" size="small" endIcon={<ArrowDropDownIcon>dropdown</ArrowDropDownIcon>}> Lorem Ipsum </Button>
                 </RW>
             </Mainwrapper>
         )

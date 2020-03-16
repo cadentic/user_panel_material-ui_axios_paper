@@ -59,15 +59,16 @@ class ProgressIndicator extends Component {
     ];
 
     render(){
+        const _data = this.props.data || this.data;
         return(
             <Mainwrapper>
                 {
-                    this.data.map( data => {
+                    _data.map( data => {
                         return (
                             <LProgress>
                                 <RW>
                                     <LProgressTextTitle>
-                                        Lorem Ipsum
+                                        { data.title || "Lorem Ipsum"}
                                     </LProgressTextTitle>
                                 </RW>
                                 <RW>

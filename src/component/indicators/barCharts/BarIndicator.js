@@ -57,31 +57,45 @@ const Value = styled.span`
 export default class SimpleBarChart extends PureComponent {
 
   render() {
+    const _data = this.props.data ? this.props.data : [];
+    
     return (
         <Mainwrapper>
             <Headen>LOREM IPSUM DOLOR SIT AMET</Headen>
             <Row>
-                <Col width="33.333%">
-                    <ColoredBar color={properties.orange}>
-                        <Headen2>LOREM</Headen2> 
-                        <Value>0.675</Value>
-                    </ColoredBar>
-                    <Legend>lorem ipsum dolor sit amit, consetituer sit.</Legend>
-                </Col>
-                <Col width="33.333%">
-                    <ColoredBar color={properties.theme1}>
-                        <Headen2>LOREM</Headen2>
-                        <Value>0.675</Value>
-                    </ColoredBar>
-                    <Legend>lorem ipsum dolor sit amit, consetituer sit.</Legend>
-                </Col>
-                <Col width="33.333%">
-                    <ColoredBar color={properties.theme3}>
-                        <Headen2>LOREM</Headen2>
-                        <Value>0.675</Value>
-                    </ColoredBar>
-                    <Legend>lorem ipsum dolor sit amit, consetituer sit.</Legend>
-                </Col>
+                {
+                    _data.length > 0 ? 
+                    <Col width="33.333%">
+                        <ColoredBar color={_data[0].strokeColor || properties.orange}>
+                            <Headen2>{ _data[0].title  || "LOREM"}</Headen2> 
+                            <Value>{ _data[0].recent_value || "0.675"}</Value>
+                        </ColoredBar>
+                        <Legend>{ _data[0].detail || "lorem ipsum dolor sit amit, consetituer sit."}</Legend>
+                    </Col>
+                    : ""
+                }
+                {
+                    _data.length > 1 ? 
+                    <Col width="33.333%">
+                        <ColoredBar color={ _data[1].strokeColor || properties.theme1}>
+                            <Headen2>{ _data[1].title  || "LOREM"}</Headen2> 
+                            <Value>{ _data[1].recent_value || "0.675"}</Value>
+                        </ColoredBar>
+                        <Legend>{ _data[1].detail || "lorem ipsum dolor sit amit, consetituer sit."}</Legend>
+                    </Col>
+                    : ""
+                }
+                {
+                    _data.length > 2 ? 
+                    <Col width="33.333%">
+                        <ColoredBar color={ _data[2].strokeColor || properties.theme3}>
+                            <Headen2>{ _data[2].title  || "LOREM"}</Headen2> 
+                            <Value>{ _data[2].recent_value || "0.675"}</Value>
+                        </ColoredBar>
+                        <Legend>{ _data[2].detail || "lorem ipsum dolor sit amit, consetituer sit."}</Legend>
+                    </Col>
+                    : ""
+                }
             </Row>
         </Mainwrapper>
       
